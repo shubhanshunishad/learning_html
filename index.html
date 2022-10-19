@@ -1,87 +1,44 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template - 1</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <style>
-        #logo {
-            background-color: #fc5296;
-            background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
-        }
-        #topRightBtn {
-            box-shadow: -7px 9px 22px 1px rgba(209, 205, 205, 0.75);
-            -webkit-box-shadow: -7px 9px 22px 1px rgba(209, 205, 205, 0.75);
-            -moz-box-shadow: -7px 9px 22px 1px rgba(209, 205, 205, 0.75);
-        }
-    </style>
-
+    <title>My blockchain Wiki</title>
 </head>
-<body onload="myFunc()">
-    
-    <!-- Navbar -->
-    <nav class="relative container mx-auto">
-        <!-- flex container  -->
-        <div class="flex justify-between">
-            <div class="flex items-center justify-center">
-                <!-- logo  -->
-                <div id="logo" class="h-28 w-28 flex items-center justify-center text-white text-5xl">
-                    R
-                </div>
-                <!-- Menu items  -->
-                <div class="hidden space-x-6 md:flex pl-12 text-xl text-gray-800 font-semibold">
-                    <a href="#!" class="text-pink-500 hover:text-pink-500 px-2">Home</a>
-                    <a href="#!" class="hover:text-pink-500 px-2">Project</a>
-                    <a href="#!" class="hover:text-pink-500 px-2">Elements</a>
-                    <a href="#!" class="hover:text-pink-500 px-2">Blog</a>
-                    <a href="#!" class="hover:text-pink-500 px-2">Shop</a>
-                    <a href="#!" class="hover:text-pink-500 px-2">Contact</a>
-                </div>
-            </div>
-            <!-- Button  -->
-            <a href="#!" class="h-16 w-64 flex items-center justify-center text-pink-500 bg-gray-100 hover:bg-gray-200 font-semibold text-xl mt-4 mr-4" id="topRightBtn">
-                Buy Rogan
-                    <i class="pl-4 fa-solid fa-arrow-right-long"></i>
-            </a>
-    </nav>
+<body>
+    <h1>Blockchain</h1>
+    <hr>
+    <p>From Wikipedia, the <em>free</em> encyclopedia</p>
+    <p><i>For other uses, see Block chain (disambiguation).</i>
+    </p>
+    <p>A <strong>blockchain</strong> jh is a type of <mark> Digital Ledger Technology (DLT)</mark>
+         that consists of growing list of records, called blocks, that are securely linked together using cryptography. <sup>[1][2][3][4]</sup> Each block contains a cryptographic hash of the previous block, a timestamp, 
+         and transaction data (generally represented as a Merkle tree, where data nodes are represented by leafs). The timestamp proves that the transaction data existed when the block was created. Since each block contains information
+          about the block previous to it, they effectively form a chain (compare linked list data structure), with each additional block linking to the ones before it. Consequently, blockchain transactions are irreversible in that, once they are
+           recorded, the data in any given block cannot be altered retroactively without altering all subsequent blocks.
+          <br><br> Blockchains are typically managed by a peer-to-peer (P2P) computer network for use as a public distributed ledger, where nodes collectively adhere to a consensus algorithm protocol to add and validate new transaction blocks. Although blockchain records are 
+           not unalterable, since blockchain forks are possible, blockchains may be considered secure by design and exemplify a distributed computing system with high Byzantine fault tolerance.[5]
 
-    <!-- Main Section  -->
-    <main>
+    </p>
+    <p>2H <sub> 2</sub> + O <sub> 2</sub> -> 2H<sub>2</sub>O</p>
+    <br>
 
-        <!-- Flex container  -->
-        <div class="container flex flex-col-reverse items-center px-16 mx-auto mt-10 space-y-0 md:space-y-0 md:flex-row">
+    <img width="500" src="images/Bitcoin_Block_Data.svg.png" alt="this is an image of blocks of chain in a blockchain">
+    <h2>History</h2>
+    <hr>
+    <p> Cryptographer David Chaum first proposed a blockchain-like protocol in his 1982 dissertation 
+        "Computer Systems Established, Maintained, and Trusted by Mutually Suspicious Groups."[11] Further 
+        work on a cryptographically secured chain of blocks was described in 1991 by Stuart Haber and W. 
+        Scott Stornetta.[4][12] They wanted to implement a system wherein document timestamps could not be 
+        tampered with. In 1992, Haber, Stornetta, and Dave Bayer incorporated Merkle trees into the design, 
+        which improved its efficiency by allowing several document certificates to be collected into one 
+        block.[4][13] Under their company Surety, their document certificate hashes have been published in 
+        The New York Times every week since 1995.[14]</p>
+        
 
-            <!-- left item  -->
-            <div class="flex flex-col space-y-4 md:w-1/2">
-                <span class="bg-gray-100 w-56 py-2 text-center font-bold text-gray-700">
-                    <span class="text-red-400">70% Off</span> for first 3 months
-                </span>
-                <h1 class="max-w-md text-6xl text-gray-800 font-semibold text-center tracking-wide md:text-5xl md:text-left">
-                    Digital Agency with Excellence Services
-                </h1>
-                <p class="max-w-md text-center text-gray-500 font-semibold text-base pt-8 md:text-left">
-                    The 3 golden rules professional graphic designer don't
-                </p>
-            </div>
-            <!-- Image  -->
-            <div class="md:w-1/2 p-20">
-                <img src="./image.jpeg" alt="image not found">
-            </div>
 
-        </div>
 
-    </main>
 
-    <footer class="flex justify-around font-semibold text-2xl text-gray-800 py-4">
-        <span id="myName">[Student name]</span>
-        <span id="myRollno">[University Rollno]</span>
-        <span>GLA University, Mathura</span>
-        <span id="dateToday">[11-07-2022]</span>
-    </footer>
-
-    <script src="./script.js"></script>
 </body>
 </html>
